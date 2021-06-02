@@ -1,0 +1,11 @@
+C:\Users\tess7\source\repos\Contact_Tracing\Contact_Tracing\bin\Debug\Contact_Tracing.exe.config
+C:\Users\tess7\source\repos\Contact_Tracing\Contact_Tracing\bin\Debug\Contact_Tracing.exe
+C:\Users\tess7\source\repos\Contact_Tracing\Contact_Tracing\bin\Debug\Contact_Tracing.pdb
+C:\Users\tess7\source\repos\Contact_Tracing\Contact_Tracing\obj\Debug\Contact_Tracing.csprojAssemblyReference.cache
+C:\Users\tess7\source\repos\Contact_Tracing\Contact_Tracing\obj\Debug\Contact_Tracing.Fill_up.resources
+C:\Users\tess7\source\repos\Contact_Tracing\Contact_Tracing\obj\Debug\Contact_Tracing.Form1.resources
+C:\Users\tess7\source\repos\Contact_Tracing\Contact_Tracing\obj\Debug\Contact_Tracing.Properties.Resources.resources
+C:\Users\tess7\source\repos\Contact_Tracing\Contact_Tracing\obj\Debug\Contact_Tracing.csproj.GenerateResource.cache
+C:\Users\tess7\source\repos\Contact_Tracing\Contact_Tracing\obj\Debug\Contact_Tracing.csproj.CoreCompileInputs.cache
+C:\Users\tess7\source\repos\Contact_Tracing\Contact_Tracing\obj\Debug\Contact_Tracing.exe
+C:\Users\tess7\source\repos\Contact_Tracing\Contact_Tracing\obj\Debug\Contact_Tracing.pdb

@@ -10,21 +10,11 @@ using System.Windows.Forms;
 
 namespace Contact_Tracing
 {
-    public partial class Form1 : Form
+    public partial class Fill_up : Form
     {
-        public Form1()
+        public Fill_up()
         {
             InitializeComponent();
-        }
-
-        private void progressBar1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void fill_form_Click(object sender, EventArgs e)
-        {
-
         }
     }
 }
