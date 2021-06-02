@@ -16,5 +16,10 @@ namespace Contact_Tracing
         {
             InitializeComponent();
         }
+
+        internal void Show(int v)
+        {
+            throw new NotImplementedException();
+        }
     }
 }

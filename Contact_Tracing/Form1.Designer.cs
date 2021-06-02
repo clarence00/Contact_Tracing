@@ -28,10 +28,12 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.label1 = new System.Windows.Forms.Label();
             this.fill_form = new System.Windows.Forms.Button();
             this.review_form = new System.Windows.Forms.Button();
             this.progressBar1 = new System.Windows.Forms.ProgressBar();
+            this.bar_time = new System.Windows.Forms.Timer(this.components);
             this.SuspendLayout();
             // 
             // label1
@@ -56,6 +58,7 @@
             this.fill_form.TabIndex = 1;
             this.fill_form.Text = "Fill-Up Form";
             this.fill_form.UseVisualStyleBackColor = false;
+            this.fill_form.Click += new System.EventHandler(this.fill_form_Click);
             // 
             // review_form
             // 
@@ -77,6 +80,10 @@
             this.progressBar1.Name = "progressBar1";
             this.progressBar1.Size = new System.Drawing.Size(346, 29);
             this.progressBar1.TabIndex = 3;
+            // 
+            // bar_time
+            // 
+            this.bar_time.Tick += new System.EventHandler(this.bar_time_Tick);
             // 
             // Form1
             // 
@@ -100,6 +107,7 @@
         private System.Windows.Forms.Button fill_form;
         private System.Windows.Forms.Button review_form;
         private System.Windows.Forms.ProgressBar progressBar1;
+        private System.Windows.Forms.Timer bar_time;
     }
 }
 
