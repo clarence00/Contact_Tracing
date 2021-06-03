@@ -45,7 +45,7 @@
             this.address = new System.Windows.Forms.TextBox();
             this.male = new System.Windows.Forms.RadioButton();
             this.female = new System.Windows.Forms.RadioButton();
-            this.others = new System.Windows.Forms.RadioButton();
+            this.btn_sub = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -190,7 +190,7 @@
             // female
             // 
             this.female.Font = new System.Drawing.Font("Tahoma", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.female.Location = new System.Drawing.Point(223, 132);
+            this.female.Location = new System.Drawing.Point(282, 131);
             this.female.Name = "female";
             this.female.Size = new System.Drawing.Size(88, 25);
             this.female.TabIndex = 21;
@@ -198,24 +198,28 @@
             this.female.Text = "Female";
             this.female.UseVisualStyleBackColor = true;
             // 
-            // others
+            // btn_sub
             // 
-            this.others.Font = new System.Drawing.Font("Tahoma", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.others.Location = new System.Drawing.Point(324, 132);
-            this.others.Name = "others";
-            this.others.Size = new System.Drawing.Size(88, 25);
-            this.others.TabIndex = 22;
-            this.others.TabStop = true;
-            this.others.Text = "Others";
-            this.others.UseVisualStyleBackColor = true;
+            this.btn_sub.BackColor = System.Drawing.Color.Silver;
+            this.btn_sub.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.btn_sub.FlatAppearance.BorderSize = 5;
+            this.btn_sub.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btn_sub.Font = new System.Drawing.Font("Tahoma", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_sub.Location = new System.Drawing.Point(143, 255);
+            this.btn_sub.Name = "btn_sub";
+            this.btn_sub.Size = new System.Drawing.Size(146, 39);
+            this.btn_sub.TabIndex = 23;
+            this.btn_sub.Text = "Submit";
+            this.btn_sub.UseVisualStyleBackColor = false;
+            this.btn_sub.Click += new System.EventHandler(this.btn_sub_Click);
             // 
             // Fill_up
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
-            this.ClientSize = new System.Drawing.Size(450, 268);
-            this.Controls.Add(this.others);
+            this.ClientSize = new System.Drawing.Size(450, 306);
+            this.Controls.Add(this.btn_sub);
             this.Controls.Add(this.female);
             this.Controls.Add(this.male);
             this.Controls.Add(this.address);
@@ -259,6 +263,6 @@
         private System.Windows.Forms.TextBox address;
         private System.Windows.Forms.RadioButton male;
         private System.Windows.Forms.RadioButton female;
-        private System.Windows.Forms.RadioButton others;
+        private System.Windows.Forms.Button btn_sub;
     }
 }
