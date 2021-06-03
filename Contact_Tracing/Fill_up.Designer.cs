@@ -151,6 +151,7 @@
             this.age.Name = "age";
             this.age.Size = new System.Drawing.Size(52, 27);
             this.age.TabIndex = 13;
+            this.age.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.age_KeyPress);
             // 
             // contactNo
             // 

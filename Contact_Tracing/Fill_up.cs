@@ -39,6 +39,15 @@ namespace Contact_Tracing
             }
         }
 
+        private void age_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            age.MaxLength = 2;
+            if (!char.IsControl(e.KeyChar) && !char.IsDigit(e.KeyChar))
+            {
+                e.Handled = true;
+            }
+        }
+
         private void btn_sub_Click(object sender, EventArgs e)
         {
             fullName = firstName.Text + " " + lastName.Text;
@@ -75,5 +84,6 @@ namespace Contact_Tracing
             outputFile.Close();
         }
 
+        
     }
 }
