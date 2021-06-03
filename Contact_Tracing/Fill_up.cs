@@ -14,7 +14,7 @@ namespace Contact_Tracing
     public partial class Fill_up : Form
     {
         string fullName;
-        byte stored_age;
+        string stored_age;
         string stored_sex;
         string stored_email;
         string stored_contactno;
@@ -42,8 +42,12 @@ namespace Contact_Tracing
         private void btn_sub_Click(object sender, EventArgs e)
         {
             fullName = firstName.Text + " " + lastName.Text;
+            if (firstName.Text.Contains(" "))
+            {
+                firstName.Text.Replace(" ","");
+            }
             
-            stored_age = byte.Parse(age.Text);
+            stored_age = age.Text;
 
             if (male.Checked)
             {
