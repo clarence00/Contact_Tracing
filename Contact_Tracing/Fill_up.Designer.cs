@@ -38,14 +38,14 @@
             this.label10 = new System.Windows.Forms.Label();
             this.firstName = new System.Windows.Forms.TextBox();
             this.lastName = new System.Windows.Forms.TextBox();
-            this.middleName = new System.Windows.Forms.TextBox();
+            this.middleIni = new System.Windows.Forms.TextBox();
             this.age = new System.Windows.Forms.TextBox();
             this.contactNo = new System.Windows.Forms.TextBox();
             this.email = new System.Windows.Forms.TextBox();
-            this.address = new System.Windows.Forms.TextBox();
             this.male = new System.Windows.Forms.RadioButton();
             this.female = new System.Windows.Forms.RadioButton();
             this.btn_sub = new System.Windows.Forms.Button();
+            this.address = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // label1
@@ -73,7 +73,7 @@
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(124, 30);
             this.label3.TabIndex = 2;
-            this.label3.Text = "Middle Name";
+            this.label3.Text = "Middle Initial";
             // 
             // label4
             // 
@@ -136,13 +136,13 @@
             this.lastName.Size = new System.Drawing.Size(269, 27);
             this.lastName.TabIndex = 11;
             // 
-            // middleName
+            // middleIni
             // 
-            this.middleName.Location = new System.Drawing.Point(143, 72);
-            this.middleName.Multiline = true;
-            this.middleName.Name = "middleName";
-            this.middleName.Size = new System.Drawing.Size(269, 27);
-            this.middleName.TabIndex = 12;
+            this.middleIni.Location = new System.Drawing.Point(143, 72);
+            this.middleIni.Multiline = true;
+            this.middleIni.Name = "middleIni";
+            this.middleIni.Size = new System.Drawing.Size(269, 27);
+            this.middleIni.TabIndex = 12;
             // 
             // age
             // 
@@ -167,14 +167,6 @@
             this.email.Name = "email";
             this.email.Size = new System.Drawing.Size(269, 27);
             this.email.TabIndex = 16;
-            // 
-            // address
-            // 
-            this.address.Location = new System.Drawing.Point(143, 222);
-            this.address.Multiline = true;
-            this.address.Name = "address";
-            this.address.Size = new System.Drawing.Size(269, 27);
-            this.address.TabIndex = 17;
             // 
             // male
             // 
@@ -205,7 +197,7 @@
             this.btn_sub.FlatAppearance.BorderSize = 5;
             this.btn_sub.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btn_sub.Font = new System.Drawing.Font("Tahoma", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_sub.Location = new System.Drawing.Point(143, 255);
+            this.btn_sub.Location = new System.Drawing.Point(143, 276);
             this.btn_sub.Name = "btn_sub";
             this.btn_sub.Size = new System.Drawing.Size(146, 39);
             this.btn_sub.TabIndex = 23;
@@ -213,12 +205,20 @@
             this.btn_sub.UseVisualStyleBackColor = false;
             this.btn_sub.Click += new System.EventHandler(this.btn_sub_Click);
             // 
+            // address
+            // 
+            this.address.Location = new System.Drawing.Point(143, 222);
+            this.address.Multiline = true;
+            this.address.Name = "address";
+            this.address.Size = new System.Drawing.Size(269, 48);
+            this.address.TabIndex = 17;
+            // 
             // Fill_up
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
-            this.ClientSize = new System.Drawing.Size(450, 306);
+            this.ClientSize = new System.Drawing.Size(450, 327);
             this.Controls.Add(this.btn_sub);
             this.Controls.Add(this.female);
             this.Controls.Add(this.male);
@@ -226,7 +226,7 @@
             this.Controls.Add(this.email);
             this.Controls.Add(this.contactNo);
             this.Controls.Add(this.age);
-            this.Controls.Add(this.middleName);
+            this.Controls.Add(this.middleIni);
             this.Controls.Add(this.lastName);
             this.Controls.Add(this.firstName);
             this.Controls.Add(this.label10);
@@ -256,13 +256,13 @@
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.TextBox firstName;
         private System.Windows.Forms.TextBox lastName;
-        private System.Windows.Forms.TextBox middleName;
+        private System.Windows.Forms.TextBox middleIni;
         private System.Windows.Forms.TextBox age;
         private System.Windows.Forms.TextBox contactNo;
         private System.Windows.Forms.TextBox email;
-        private System.Windows.Forms.TextBox address;
         private System.Windows.Forms.RadioButton male;
         private System.Windows.Forms.RadioButton female;
         private System.Windows.Forms.Button btn_sub;
+        private System.Windows.Forms.TextBox address;
     }
 }
