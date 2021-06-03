@@ -159,6 +159,7 @@
             this.contactNo.Name = "contactNo";
             this.contactNo.Size = new System.Drawing.Size(269, 27);
             this.contactNo.TabIndex = 15;
+            this.contactNo.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.contactNo_KeyPress);
             // 
             // email
             // 
