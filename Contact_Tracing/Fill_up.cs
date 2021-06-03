@@ -68,7 +68,7 @@ namespace Contact_Tracing
             }
 
             stored_contactno = contactNo.Text;
-
+            
             stored_email = email.Text;
 
             stored_address = address.Text;
@@ -79,7 +79,7 @@ namespace Contact_Tracing
             outputFile.WriteLine("Age: " + stored_age + " years old");
             outputFile.WriteLine("Sex: " + stored_sex);
             outputFile.WriteLine("Contact Number: " + stored_contactno);
-            outputFile.WriteLine("Email Address: " + stored_email);
+            outputFile.WriteLine("Email Address: " + stored_email + " @gmail.com");
             outputFile.WriteLine("Address: " + stored_address);
             outputFile.Close();
         }

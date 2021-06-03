@@ -46,6 +46,7 @@
             this.female = new System.Windows.Forms.RadioButton();
             this.btn_sub = new System.Windows.Forms.Button();
             this.address = new System.Windows.Forms.TextBox();
+            this.label7 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // label1
@@ -122,6 +123,7 @@
             // 
             // firstName
             // 
+            this.firstName.Font = new System.Drawing.Font("Tahoma", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.firstName.Location = new System.Drawing.Point(143, 12);
             this.firstName.Multiline = true;
             this.firstName.Name = "firstName";
@@ -130,6 +132,7 @@
             // 
             // lastName
             // 
+            this.lastName.Font = new System.Drawing.Font("Tahoma", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lastName.Location = new System.Drawing.Point(143, 42);
             this.lastName.Multiline = true;
             this.lastName.Name = "lastName";
@@ -138,6 +141,7 @@
             // 
             // middleIni
             // 
+            this.middleIni.Font = new System.Drawing.Font("Tahoma", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.middleIni.Location = new System.Drawing.Point(143, 72);
             this.middleIni.Multiline = true;
             this.middleIni.Name = "middleIni";
@@ -146,6 +150,7 @@
             // 
             // age
             // 
+            this.age.Font = new System.Drawing.Font("Tahoma", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.age.Location = new System.Drawing.Point(143, 102);
             this.age.Multiline = true;
             this.age.Name = "age";
@@ -155,6 +160,7 @@
             // 
             // contactNo
             // 
+            this.contactNo.Font = new System.Drawing.Font("Tahoma", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.contactNo.Location = new System.Drawing.Point(143, 162);
             this.contactNo.Multiline = true;
             this.contactNo.Name = "contactNo";
@@ -164,10 +170,11 @@
             // 
             // email
             // 
+            this.email.Font = new System.Drawing.Font("Tahoma", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.email.Location = new System.Drawing.Point(143, 192);
             this.email.Multiline = true;
             this.email.Name = "email";
-            this.email.Size = new System.Drawing.Size(269, 27);
+            this.email.Size = new System.Drawing.Size(154, 27);
             this.email.TabIndex = 16;
             // 
             // male
@@ -209,11 +216,22 @@
             // 
             // address
             // 
+            this.address.Font = new System.Drawing.Font("Tahoma", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.address.Location = new System.Drawing.Point(143, 222);
             this.address.Multiline = true;
             this.address.Name = "address";
             this.address.Size = new System.Drawing.Size(269, 48);
             this.address.TabIndex = 17;
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("Tahoma", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.Location = new System.Drawing.Point(299, 193);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(113, 23);
+            this.label7.TabIndex = 24;
+            this.label7.Text = "@gmail.com";
             // 
             // Fill_up
             // 
@@ -221,6 +239,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
             this.ClientSize = new System.Drawing.Size(450, 327);
+            this.Controls.Add(this.label7);
             this.Controls.Add(this.btn_sub);
             this.Controls.Add(this.female);
             this.Controls.Add(this.male);
@@ -266,5 +285,6 @@
         private System.Windows.Forms.RadioButton female;
         private System.Windows.Forms.Button btn_sub;
         private System.Windows.Forms.TextBox address;
+        private System.Windows.Forms.Label label7;
     }
 }
