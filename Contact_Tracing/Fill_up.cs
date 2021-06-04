@@ -48,6 +48,14 @@ namespace Contact_Tracing
             }
         }
 
+        private void names(object sender, KeyPressEventArgs e)
+        {
+            if (!char.IsControl(e.KeyChar) && !char.IsLetter(e.KeyChar))
+            {
+                e.Handled = true;
+            }
+        }
+
         private void btn_sub_Click(object sender, EventArgs e)
         {
             fullName = firstName.Text + " " + lastName.Text;
@@ -73,6 +81,7 @@ namespace Contact_Tracing
 
             stored_address = address.Text;
 
+
             StreamWriter outputFile;
             outputFile = File.AppendText(fullName + ".txt");
             outputFile.WriteLine("Full Name: " + fullName);
@@ -82,6 +91,10 @@ namespace Contact_Tracing
             outputFile.WriteLine("Email Address: " + stored_email + " @gmail.com");
             outputFile.WriteLine("Address: " + stored_address);
             outputFile.Close();
+
+            this.Hide();
+            Form1 form = new Form1();
+            form.Show();
         }
 
         

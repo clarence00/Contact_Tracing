@@ -129,6 +129,7 @@
             this.firstName.Name = "firstName";
             this.firstName.Size = new System.Drawing.Size(269, 27);
             this.firstName.TabIndex = 10;
+            this.firstName.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.names);
             // 
             // lastName
             // 
@@ -138,6 +139,7 @@
             this.lastName.Name = "lastName";
             this.lastName.Size = new System.Drawing.Size(269, 27);
             this.lastName.TabIndex = 11;
+            this.lastName.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.names);
             // 
             // middleIni
             // 
@@ -147,6 +149,7 @@
             this.middleIni.Name = "middleIni";
             this.middleIni.Size = new System.Drawing.Size(269, 27);
             this.middleIni.TabIndex = 12;
+            this.middleIni.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.names);
             // 
             // age
             // 
