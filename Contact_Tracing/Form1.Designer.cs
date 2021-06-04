@@ -34,6 +34,7 @@
             this.review_form = new System.Windows.Forms.Button();
             this.progressBar1 = new System.Windows.Forms.ProgressBar();
             this.bar_time = new System.Windows.Forms.Timer(this.components);
+            this.bar_time2 = new System.Windows.Forms.Timer(this.components);
             this.SuspendLayout();
             // 
             // label1
@@ -108,6 +109,7 @@
         private System.Windows.Forms.Button review_form;
         private System.Windows.Forms.ProgressBar progressBar1;
         private System.Windows.Forms.Timer bar_time;
+        private System.Windows.Forms.Timer bar_time2;
     }
 }
 
