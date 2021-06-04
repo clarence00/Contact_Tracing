@@ -34,5 +34,22 @@ namespace Contact_Tracing
                 fill_Up.Show();
             }
         }
+
+        private void bar_time2_Tick(object sender, EventArgs e)
+        {
+            progressBar1.Increment(10);
+            if (progressBar1.Value == progressBar1.Maximum)
+            {
+                bar_time2.Stop();
+                this.Hide();
+                Review review = new Review();
+                review.Show();
+            }
+        }
+
+        private void review_form_Click(object sender, EventArgs e)
+        {
+            bar_time2.Start();
+        }
     }
 }

@@ -74,6 +74,7 @@
             this.review_form.TabIndex = 2;
             this.review_form.Text = "Review Data";
             this.review_form.UseVisualStyleBackColor = false;
+            this.review_form.Click += new System.EventHandler(this.review_form_Click);
             // 
             // progressBar1
             // 
@@ -85,6 +86,10 @@
             // bar_time
             // 
             this.bar_time.Tick += new System.EventHandler(this.bar_time_Tick);
+            // 
+            // bar_time2
+            // 
+            this.bar_time2.Tick += new System.EventHandler(this.bar_time2_Tick);
             // 
             // Form1
             // 
