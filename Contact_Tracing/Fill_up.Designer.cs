@@ -47,6 +47,7 @@
             this.btn_sub = new System.Windows.Forms.Button();
             this.address = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
+            this.backBtn = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -209,7 +210,7 @@
             this.btn_sub.FlatAppearance.BorderSize = 5;
             this.btn_sub.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btn_sub.Font = new System.Drawing.Font("Tahoma", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_sub.Location = new System.Drawing.Point(143, 276);
+            this.btn_sub.Location = new System.Drawing.Point(266, 276);
             this.btn_sub.Name = "btn_sub";
             this.btn_sub.Size = new System.Drawing.Size(146, 39);
             this.btn_sub.TabIndex = 23;
@@ -236,12 +237,28 @@
             this.label7.TabIndex = 24;
             this.label7.Text = "@gmail.com";
             // 
+            // backBtn
+            // 
+            this.backBtn.BackColor = System.Drawing.Color.Silver;
+            this.backBtn.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.backBtn.FlatAppearance.BorderSize = 5;
+            this.backBtn.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.backBtn.Font = new System.Drawing.Font("Tahoma", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.backBtn.Location = new System.Drawing.Point(49, 276);
+            this.backBtn.Name = "backBtn";
+            this.backBtn.Size = new System.Drawing.Size(146, 39);
+            this.backBtn.TabIndex = 25;
+            this.backBtn.Text = "Back";
+            this.backBtn.UseVisualStyleBackColor = false;
+            this.backBtn.Click += new System.EventHandler(this.backBtn_Click);
+            // 
             // Fill_up
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
             this.ClientSize = new System.Drawing.Size(450, 327);
+            this.Controls.Add(this.backBtn);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.btn_sub);
             this.Controls.Add(this.female);
@@ -289,5 +306,6 @@
         private System.Windows.Forms.Button btn_sub;
         private System.Windows.Forms.TextBox address;
         private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Button backBtn;
     }
 }

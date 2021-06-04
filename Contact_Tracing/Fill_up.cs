@@ -97,6 +97,11 @@ namespace Contact_Tracing
             form.Show();
         }
 
-        
+        private void backBtn_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Form1 form = new Form1();
+            form.Show();
+        }
     }
 }
